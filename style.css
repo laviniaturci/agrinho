@@ -1,0 +1,117 @@
+/* Reset básico de margens e fontes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Estilo do Cabeçalho */
+header {
+    background-color: #1e293b;
+    color: #fff;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #38bdf8;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #38bdf8;
+}
+
+/* Seção Principal */
+.banner {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #1e293b, #0f172a);
+    color: #fff;
+}
+
+.banner h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.banner p {
+    font-size: 18px;
+    margin-bottom: 25px;
+    color: #cbd5e1;
+}
+
+/* Estilo do Botão */
+#btn-acao {
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #1e293b;
+    background-color: #38bdf8;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+#btn-acao:hover {
+    background-color: #0ea5e9;
+    transform: scale(1.05);
+}
+
+/* Seção do Contador */
+.contador-container {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff;
+    margin: 30px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    max-width: 400px;
+}
+
+.contador-container h2 {
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+#contador {
+    font-size: 28px;
+    font-weight: bold;
+    color: #0ea5e9;
+}
+
+/* Rodapé */
+footer {
+    background-color: #0f172a;
+    color: #94a3b8;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+    font-size: 14px;
+}
